@@ -1,3 +1,7 @@
+html {box-sizing:border-box;}
+
+*, *:before, *after {box-sizing:inherit}	
+
 li{
 	list-style: none
 }
@@ -9,4 +13,11 @@ img{
 a{
 	text-decoration: none;
 	color:black;
+}
+
+h1{
+	background: rgb(129,188,57);
+	color: white;
+	margin: 0px;
+	padding: 0px
 }
