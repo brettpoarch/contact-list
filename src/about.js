@@ -1,6 +1,5 @@
 import React from 'react'
 import Users from './randomUsers.json'
-import {Route, Link} from 'react-router-dom'
 
 export default React.createClass ({
 	
@@ -12,19 +11,27 @@ export default React.createClass ({
 		}
 	},
 
+	handleClick: function(e){
+		e.preventDefault()
+		this.props.history.goBack()
+	},
+
   render: function(){
     return(
       <div>
         <ul>
         	<li>
-	        	<div>
-	        		<img src={this.state.user.picture.large} alt='#'/>
+	        	<div className='main'>
+	        		<button className='back' onClick={this.handleClick}><i className='fa fa-long-arrow-left'></i></button>
+	        		<img className='mainImg' src={this.state.user.picture.large} alt='#'/>
 	        	</div>
         	</li>
-        	<li>{this.state.user.name.first + ' ' + this.state.user.name.first}</li>
-        	<li>{this.state.user.email}</li>
-        	<li>{this.state.user.cell}</li>
-        	<li>{this.state.user.location.city + ', ' + this.state.user.location.state}</li>
+	        <li className='mainInfo'>
+	        	<div><i className='fa fa-user'></i> {this.state.user.name.first} {this.state.user.name.last}</div>
+	        	<div><i className='fa fa-envelope'></i> {this.state.user.email}</div>
+	        	<div><i className='fa fa-mobile'></i> {this.state.user.cell}</div>
+	        	<div><i className='fa fa-globe'></i> {this.state.user.location.city + ', ' + this.state.user.location.state}</div>
+        	</li>
         </ul>
 
 

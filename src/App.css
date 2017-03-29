@@ -1,23 +1,99 @@
 html {box-sizing:border-box;}
 
-*, *:before, *after {box-sizing:inherit}	
+*, *:before, *:after {box-sizing:inherit}	
 
+body{
+	margin: 0;
+}
 li{
-	list-style: none
+	list-style: none;
+}
+
+ul{
+	margin:0px 40px;
+	padding-left: 0px;
 }
 
 img{
-	border-radius: 50%
+	border-radius: 50%;
 }
 
 a{
 	text-decoration: none;
-	color:black;
+	color: black;
+	margin-top:-20px;
 }
 
 h1{
-	background: rgb(129,188,57);
+	background-color: rgb(129,188,57);
+	height:90px;
+	line-height: 90px;
 	color: white;
-	margin: 0px;
-	padding: 0px
+	margin: 0px 40px;
+	padding-left: 20px;
 }
+
+p{
+	margin-top: -35px;
+	margin-left: 60px;
+}
+
+.userList{
+	border-bottom: 1px solid lightgrey;
+	padding: 10px 15px;
+	margin-top: 5px;
+}
+
+.main{
+	background-color: rgb(129,188,57);
+	height:250px;
+	width:auto;
+	position:relative;
+}
+
+.mainImg{
+	position: absolute;
+	left: 45%;
+	top: 20%;
+}
+
+.mainInfo div{
+	border-bottom: 1px solid lightgrey;
+	margin-top:20px;
+	padding-bottom:20px;
+	padding-left: 10px;
+}
+
+.back{
+	background-color: transparent;
+	border:none;
+	outline: none;
+	font-size: 20px;
+}
+
+i{
+	padding-right: 10px;
+}
+
+.back{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
